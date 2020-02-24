@@ -1,27 +1,26 @@
 package be.pxl.student.entity;
 
-import java.time.LocalDate;
-import java.util.Date;
+import java.time.LocalDateTime;
 
 public class Payment {
 
-    private LocalDate date;
+    private LocalDateTime date;
     private float amount;
     private String currency;
     private String detail;
 
-    public Payment(LocalDate date, float amount, String currency, String detail) {
+    public Payment(LocalDateTime date, float amount, String currency, String detail) {
         this.date = date;
         this.amount = amount;
         this.currency = currency;
         this.detail = detail;
     }
 
-    public LocalDate getDate() {
+    public LocalDateTime getDate() {
         return date;
     }
 
-    public void setDate(LocalDate date) {
+    public void setDate(LocalDateTime date) {
         this.date = date;
     }
 
@@ -56,6 +55,6 @@ public class Payment {
                 ", amount=" + amount +
                 ", currency='" + currency + '\'' +
                 ", detail='" + detail + '\'' +
-                '}';
+                '}' + '\n';
     }
 }
