@@ -9,11 +9,6 @@ public class Account {
     private String name;
     private List<Payment> payments;
 
-    public Account(String IBAN, String name) {
-        this.IBAN = IBAN;
-        this.name = name;
-    }
-
     public String getIBAN() {
         return IBAN;
     }
@@ -43,6 +38,6 @@ public class Account {
         return "Account{" +
                 "IBAN='" + IBAN + '\'' +
                 ", name='" + name + '\'' +
-                "," + '\n' + "payments=[" + payments.stream().map(Payment::toString).collect(Collectors.joining(",")) + "]}";
+                ", payments=[" + payments.stream().map(Payment::toString).collect(Collectors.joining(",")) + "]}";
     }
 }
