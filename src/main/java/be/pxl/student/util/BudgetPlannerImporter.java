@@ -39,11 +39,11 @@ public class BudgetPlannerImporter {
         return new ArrayList<>(accountHashMap.values());
     }
 
-    private Account mapAccount(String[] lineSplit) {
+    public Account mapAccount(String[] lineSplit) {
         return new Account(lineSplit[1], lineSplit[0]);
     }
 
-    private Payment mapPayment(String[] lineSplit) {
+    public Payment mapPayment(String[] lineSplit) {
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("E MMM dd HH:mm:ss zzz yyyy", Locale.ENGLISH);
         return new Payment(LocalDateTime.parse(lineSplit[3], dateTimeFormatter), Float.parseFloat(lineSplit[4]), lineSplit[5], lineSplit[6]);
     }
