@@ -44,6 +44,8 @@ public class Account {
         return "Account{" +
                 "IBAN='" + IBAN + '\'' +
                 ", name='" + name + '\'' +
-                ", payments=[" + payments.stream().map(Payment::toString).collect(Collectors.joining(",")) + "]}";
+                ", payments=[" + payments.stream()
+                .map(Payment::toString)
+                .collect(Collectors.joining(",")) + "]}";
     }
 }

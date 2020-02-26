@@ -2,6 +2,8 @@ package be.pxl.student.util;
 
 import be.pxl.student.entity.Account;
 import be.pxl.student.entity.Payment;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -12,10 +14,18 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 
+
 /**
  * Util class to import csv file
  */
 public class BudgetPlannerImporter {
+
+    private static Logger logger;
+
+
+    public BudgetPlannerImporter() {
+        logger = LogManager.getLogger();
+    }
 
     public List<Account> readFile(String path) {
         Path filePath = Paths.get(path);
@@ -25,17 +35,21 @@ public class BudgetPlannerImporter {
             while ((line = reader.readLine()) != null) {
                 String[] lineSplit = line.split(",");
                 Account account = mapAccount(lineSplit);
+                //logger.debug("New account created" + account);
                 Payment payment = mapPayment(lineSplit);
+                logger.debug("New payment created" + payment);
                 if (!accountHashMap.containsKey(account.getIBAN())) {
                     List<Payment> payments = new ArrayList<>();
                     account.setPayments(payments);
                     accountHashMap.put(account.getIBAN(), account);
                 }
                 accountHashMap.get(account.getIBAN()).getPayments().add(payment);
+
             }
         } catch (IOException ex) {
-            ex.printStackTrace();
+            logger.error(ex);
         }
+        logger.debug("csv succesfully imported!");
         return new ArrayList<>(accountHashMap.values());
     }
 

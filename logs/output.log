@@ -1,0 +1,201 @@
+2020-02-26 21:45:59,740 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-05T16:33:04, amount=2779.33, currency='EUR', detail='Quo possimus id corrupti quod doloribus.'}
+
+2020-02-26 21:45:59,751 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-07T00:16:24, amount=4756.34, currency='EUR', detail='Repellendus et temporibus quae consectetur.'}
+
+2020-02-26 21:45:59,755 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-13T15:28:22, amount=687.76, currency='EUR', detail='Sit odio reprehenderit consequatur et.'}
+
+2020-02-26 21:45:59,759 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-22T01:13:26, amount=-4362.9, currency='EUR', detail='Sapiente optio exercitationem consectetur.'}
+
+2020-02-26 21:45:59,773 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-22T22:25:41, amount=3388.51, currency='EUR', detail='Quaerat quia necessitatibus ut voluptates et asperiores corporis.'}
+
+2020-02-26 21:45:59,776 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-10T03:19:48, amount=-908.62, currency='EUR', detail='Autem sint autem et.'}
+
+2020-02-26 21:45:59,781 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-19T17:55:49, amount=-3255.39, currency='EUR', detail='Cupiditate rerum accusamus quis.'}
+
+2020-02-26 21:45:59,784 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-16T23:15:38, amount=-4275.88, currency='EUR', detail='Sunt veritatis ut accusantium neque repudiandae et.'}
+
+2020-02-26 21:45:59,788 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-15T17:48:20, amount=-3695.84, currency='EUR', detail='Non ut error maiores nihil deserunt dolores.'}
+
+2020-02-26 21:45:59,793 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-23T01:53:44, amount=-1364.14, currency='EUR', detail='Quia vero est nam.'}
+
+2020-02-26 21:45:59,817 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-01-31T12:49:58, amount=-4804.54, currency='EUR', detail='Voluptates sit sed eveniet optio doloremque omnis voluptatem.'}
+
+2020-02-26 21:45:59,821 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-14T08:03:23, amount=-4612.65, currency='EUR', detail='Sunt repellat in fugit quia iste quasi.'}
+
+2020-02-26 21:45:59,825 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-09T04:26:11, amount=-4043.37, currency='EUR', detail='Est enim omnis molestias.'}
+
+2020-02-26 21:45:59,831 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-01T23:56:57, amount=243.37, currency='EUR', detail='Inventore dolor sapiente modi cupiditate harum quia non.'}
+
+2020-02-26 21:45:59,840 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-22T06:38:44, amount=635.76, currency='EUR', detail='Nostrum nostrum consequatur et quisquam.'}
+
+2020-02-26 21:45:59,858 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-20T15:50:18, amount=-3431.17, currency='EUR', detail='Nobis quis vel placeat voluptatibus occaecati quaerat magni.'}
+
+2020-02-26 21:45:59,863 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-16T19:24:14, amount=-3861.78, currency='EUR', detail='Rerum corporis autem.'}
+
+2020-02-26 21:45:59,869 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-18T06:25:50, amount=-1088.01, currency='EUR', detail='Eligendi et rerum occaecati expedita temporibus dolorem.'}
+
+2020-02-26 21:45:59,873 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-08T23:38:19, amount=817.46, currency='EUR', detail='Nihil perspiciatis eum magnam beatae.'}
+
+2020-02-26 21:45:59,879 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-09T17:52, amount=-4724.5, currency='EUR', detail='Eligendi debitis tempora quis aut excepturi molestias quo.'}
+
+2020-02-26 21:45:59,884 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-22T03:08:34, amount=-2794.36, currency='EUR', detail='Esse natus voluptatum minus omnis qui at.'}
+
+2020-02-26 21:45:59,888 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-23T20:56:01, amount=-1689.27, currency='EUR', detail='Porro autem ut veritatis quia dolores ut non.'}
+
+2020-02-26 21:45:59,893 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-18T11:36:25, amount=1727.37, currency='EUR', detail='Quo autem unde earum voluptas expedita nulla libero.'}
+
+2020-02-26 21:45:59,908 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-04T06:24:19, amount=218.75, currency='EUR', detail='Autem temporibus incidunt voluptatum quia deleniti maiores.'}
+
+2020-02-26 21:45:59,913 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-21T07:55:53, amount=-1515.6, currency='EUR', detail='Repudiandae quaerat repellat.'}
+
+2020-02-26 21:45:59,916 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-22T13:45:08, amount=1163.24, currency='EUR', detail='Dolores cupiditate ab nobis sit beatae ducimus autem.'}
+
+2020-02-26 21:45:59,924 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-20T03:54:38, amount=4080.33, currency='EUR', detail='Eum officia exercitationem.'}
+
+2020-02-26 21:45:59,926 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-17T00:07:37, amount=-1090.9, currency='EUR', detail='Consectetur maiores nesciunt quidem voluptas error et mollitia.'}
+
+2020-02-26 21:45:59,930 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-22T20:30:31, amount=-3418.44, currency='EUR', detail='Distinctio iusto quo veniam minus eligendi reiciendis.'}
+
+2020-02-26 21:45:59,932 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-23T16:01:58, amount=-651.26, currency='EUR', detail='Et qui qui cumque est.'}
+
+2020-02-26 21:45:59,933 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-18T21:02:39, amount=-1695.89, currency='EUR', detail='Suscipit qui ea.'}
+
+2020-02-26 21:45:59,936 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-24T02:50:04, amount=-3315.66, currency='EUR', detail='Est enim consequuntur eos earum cumque suscipit qui.'}
+
+2020-02-26 21:45:59,939 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-21T18:30:01, amount=968.82, currency='EUR', detail='Occaecati earum blanditiis facere porro autem.'}
+
+2020-02-26 21:45:59,942 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-01-28T15:45:24, amount=1269.98, currency='EUR', detail='Quia veritatis qui repellendus.'}
+
+2020-02-26 21:45:59,945 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-24T00:37:35, amount=431.36, currency='EUR', detail='Nulla in officia consequatur quibusdam omnis enim.'}
+
+2020-02-26 21:45:59,947 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-21T17:29:11, amount=2583.21, currency='EUR', detail='In ipsa sit.'}
+
+2020-02-26 21:45:59,949 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-21T12:13:39, amount=-306.43, currency='EUR', detail='Voluptatum vero laudantium id soluta necessitatibus maiores explicabo.'}
+
+2020-02-26 21:45:59,963 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-22T18:30:07, amount=-4345.76, currency='EUR', detail='Esse aut rerum eum.'}
+
+2020-02-26 21:45:59,965 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-23T17:23:14, amount=-1519.71, currency='EUR', detail='Est similique quis veritatis commodi.'}
+
+2020-02-26 21:45:59,967 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-23T04:59:09, amount=3317.31, currency='EUR', detail='Sit dolores iure.'}
+
+2020-02-26 21:45:59,969 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-22T10:49:06, amount=-2713.06, currency='EUR', detail='Consequatur vitae quia.'}
+
+2020-02-26 21:45:59,971 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-17T18:37:17, amount=-4108.73, currency='EUR', detail='Repellat rerum exercitationem adipisci.'}
+
+2020-02-26 21:45:59,974 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-18T20:22:54, amount=2209.58, currency='EUR', detail='Consequatur repellat saepe.'}
+
+2020-02-26 21:45:59,977 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-21T19:04:41, amount=-4723.98, currency='EUR', detail='Qui quidem dolorem aliquid dolor id neque iusto.'}
+
+2020-02-26 21:45:59,979 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-23T10:18:31, amount=-605.67, currency='EUR', detail='Natus placeat perferendis aliquam.'}
+
+2020-02-26 21:45:59,981 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-23T18:03:50, amount=-4843.61, currency='EUR', detail='Dicta explicabo natus aliquid fugit.'}
+
+2020-02-26 21:45:59,983 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-05T06:20:54, amount=-3645.89, currency='EUR', detail='Ipsa libero quia corrupti ut repellendus sed.'}
+
+2020-02-26 21:45:59,986 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-17T15:40:48, amount=-2523.98, currency='EUR', detail='Atque quibusdam maiores rerum quas.'}
+
+2020-02-26 21:45:59,989 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-20T19:20:15, amount=3205.64, currency='EUR', detail='Earum ut aperiam reprehenderit quo assumenda optio.'}
+
+2020-02-26 21:45:59,991 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-24T17:13:50, amount=2677.86, currency='EUR', detail='In quisquam velit provident quia omnis eaque doloremque.'}
+
+2020-02-26 21:45:59,993 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-01T14:46:13, amount=1093.7, currency='EUR', detail='Eius fugit suscipit quo ut ut sint et.'}
+
+2020-02-26 21:45:59,996 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-23T09:04:46, amount=-815.23, currency='EUR', detail='Ea qui unde necessitatibus dolores tempora.'}
+
+2020-02-26 21:45:59,998 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-23T04:27:51, amount=-1233.6, currency='EUR', detail='Dignissimos dolorem aliquid.'}
+
+2020-02-26 21:45:59,999 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-11T16:58:51, amount=3206.93, currency='EUR', detail='Praesentium qui quia veniam consequuntur.'}
+
+2020-02-26 21:46:00,030 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-07T16:50:10, amount=3372.07, currency='EUR', detail='Cupiditate quidem ad nostrum eius animi.'}
+
+2020-02-26 21:46:00,087 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-21T17:48:35, amount=1784.03, currency='EUR', detail='Iusto dolorem voluptas consequatur facere dolores suscipit.'}
+
+2020-02-26 21:46:00,089 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-24T03:00:31, amount=-1522.51, currency='EUR', detail='Eos vitae sapiente ea.'}
+
+2020-02-26 21:46:00,092 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-19T06:33:07, amount=2501.91, currency='EUR', detail='Molestiae quisquam consequuntur perspiciatis voluptas mollitia.'}
+
+2020-02-26 21:46:00,093 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-16T12:56:04, amount=1380.69, currency='EUR', detail='Voluptas quis modi explicabo dolores veritatis cupiditate et.'}
+
+2020-02-26 21:46:00,099 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-15T00:28:03, amount=2161.56, currency='EUR', detail='Mollitia nihil perferendis.'}
+
+2020-02-26 21:46:00,101 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-19T20:37:48, amount=490.79, currency='EUR', detail='Harum dolore ea hic.'}
+
+2020-02-26 21:46:00,103 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-10T12:44:36, amount=-1599.45, currency='EUR', detail='Qui possimus quae ratione ad.'}
+
+2020-02-26 21:46:00,105 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-23T09:07:10, amount=1313.48, currency='EUR', detail='Adipisci quisquam expedita molestiae impedit.'}
+
+2020-02-26 21:46:00,108 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-13T17:46:11, amount=1247.51, currency='EUR', detail='Soluta aut omnis non ex consectetur.'}
+
+2020-02-26 21:46:00,110 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-23T09:43:06, amount=723.07, currency='EUR', detail='Voluptatum id eius molestiae.'}
+
+2020-02-26 21:46:00,112 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-22T04:32:58, amount=1701.4, currency='EUR', detail='Impedit sit sunt harum doloribus exercitationem explicabo.'}
+
+2020-02-26 21:46:00,115 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-24T12:55:54, amount=1455.55, currency='EUR', detail='Consectetur voluptatum aliquam dolores quia.'}
+
+2020-02-26 21:46:00,117 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-16T16:17:15, amount=-88.48, currency='EUR', detail='Et doloremque enim laborum quo voluptatem ut.'}
+
+2020-02-26 21:46:00,119 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-24T07:12:48, amount=741.14, currency='EUR', detail='Sunt est et nesciunt.'}
+
+2020-02-26 21:46:00,120 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-23T19:14:05, amount=-2913.62, currency='EUR', detail='Itaque autem nostrum perferendis.'}
+
+2020-02-26 21:46:00,146 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-22T17:23:53, amount=-2602.14, currency='EUR', detail='Culpa quasi et consequuntur et velit.'}
+
+2020-02-26 21:46:00,148 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-07T02:44:24, amount=-947.91, currency='EUR', detail='Iure vitae ullam magnam ut dicta ad repudiandae.'}
+
+2020-02-26 21:46:00,152 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-20T10:32:05, amount=-4145.98, currency='EUR', detail='Dicta labore nostrum eius cupiditate fugit.'}
+
+2020-02-26 21:46:00,154 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-11T14:25:21, amount=-618.41, currency='EUR', detail='Consequuntur necessitatibus mollitia voluptatem natus et consectetur.'}
+
+2020-02-26 21:46:00,156 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-12T17:53:35, amount=4417.95, currency='EUR', detail='Praesentium est est enim similique ad dolorem.'}
+
+2020-02-26 21:46:00,159 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-23T01:11:10, amount=501.28, currency='EUR', detail='Quisquam nisi corrupti.'}
+
+2020-02-26 21:46:00,161 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-21T06:35:17, amount=-704.11, currency='EUR', detail='Ut et sunt fugit quos.'}
+
+2020-02-26 21:46:00,162 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-15T13:54:59, amount=-1904.11, currency='EUR', detail='Nihil a adipisci hic autem blanditiis.'}
+
+2020-02-26 21:46:00,164 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-21T22:36:39, amount=4899.57, currency='EUR', detail='Dignissimos voluptatum odio.'}
+
+2020-02-26 21:46:00,167 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-23T20:54:53, amount=-3104.53, currency='EUR', detail='Autem numquam dolores dolores a qui.'}
+
+2020-02-26 21:46:00,170 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-24T01:36:50, amount=-4303.74, currency='EUR', detail='Inventore quia soluta veritatis et magnam.'}
+
+2020-02-26 21:46:00,173 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-20T14:45:28, amount=-3707.84, currency='EUR', detail='Velit rerum aspernatur non et dolor minus deleniti.'}
+
+2020-02-26 21:46:00,176 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-18T06:47:32, amount=-2867.41, currency='EUR', detail='Exercitationem qui sint inventore.'}
+
+2020-02-26 21:46:00,180 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-14T19:07:49, amount=-2378.84, currency='EUR', detail='Consequatur vel perspiciatis.'}
+
+2020-02-26 21:46:00,191 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-24T20:48:54, amount=-1030.17, currency='EUR', detail='Reprehenderit modi voluptatum.'}
+
+2020-02-26 21:46:00,197 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-20T22:22:38, amount=20.28, currency='EUR', detail='Ea dolores sed officia fugit sunt eos esse.'}
+
+2020-02-26 21:46:00,200 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-18T15:12:54, amount=-0.44, currency='EUR', detail='Laborum illum odio et consequatur et.'}
+
+2020-02-26 21:46:00,204 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-24T05:01:32, amount=-680.86, currency='EUR', detail='Laboriosam perferendis perspiciatis est.'}
+
+2020-02-26 21:46:00,207 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-04T11:30:29, amount=-3321.95, currency='EUR', detail='Pariatur molestiae voluptas blanditiis magni sunt repellat laudantium.'}
+
+2020-02-26 21:46:00,210 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-23T21:42:35, amount=-708.35, currency='EUR', detail='Adipisci eligendi facere aut sequi molestiae quia.'}
+
+2020-02-26 21:46:00,213 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-17T01:30:11, amount=-887.48, currency='EUR', detail='Omnis aut repellendus numquam similique aut rerum sunt.'}
+
+2020-02-26 21:46:00,216 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-09T06:34:18, amount=2039.99, currency='EUR', detail='Maiores cupiditate eos cum est porro.'}
+
+2020-02-26 21:46:00,221 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-24T11:54:14, amount=-4248.85, currency='EUR', detail='Quos aut error ut eum.'}
+
+2020-02-26 21:46:00,234 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-15T06:10:38, amount=4752.63, currency='EUR', detail='Ratione fugiat qui dolor accusamus quibusdam et.'}
+
+2020-02-26 21:46:00,236 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-10T21:30:42, amount=-1592.35, currency='EUR', detail='Et incidunt cupiditate deleniti deleniti corrupti.'}
+
+2020-02-26 21:46:00,238 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-21T19:41:12, amount=2874.31, currency='EUR', detail='Soluta facere quia non porro.'}
+
+2020-02-26 21:46:00,241 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-24T10:46:38, amount=-3367.52, currency='EUR', detail='Voluptate facilis doloribus eum officiis fugit possimus.'}
+
+2020-02-26 21:46:00,243 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-24T04:43:26, amount=-4045.28, currency='EUR', detail='Architecto et ea voluptatem facilis.'}
+
+2020-02-26 21:46:00,246 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-24T02:15:35, amount=2009.18, currency='EUR', detail='Rerum reiciendis doloremque.'}
+
+2020-02-26 21:46:00,248 DEBUG b.p.s.u.BudgetPlannerImporter [main] New payment created{date=2020-02-22T20:32:20, amount=-352.35, currency='EUR', detail='Dolore nostrum ut maiores ut aliquid sed.'}
+
+2020-02-26 21:46:00,248 DEBUG b.p.s.u.BudgetPlannerImporter [main] csv succesfully imported!
