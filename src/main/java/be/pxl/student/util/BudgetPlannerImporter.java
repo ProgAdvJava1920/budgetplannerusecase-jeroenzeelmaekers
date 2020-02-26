@@ -11,15 +11,11 @@ import java.nio.file.Paths;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
-import java.util.stream.Collectors;
 
 /**
  * Util class to import csv file
  */
 public class BudgetPlannerImporter {
-
-    public BudgetPlannerImporter() {
-    }
 
     public List<Account> readFile(String path) {
         Path filePath = Paths.get(path);
@@ -30,7 +26,7 @@ public class BudgetPlannerImporter {
                 String[] lineSplit = line.split(",");
                 Account account = mapAccount(lineSplit);
                 Payment payment = mapPayment(lineSplit);
-                if (!accountHashMap.containsKey(account.getIBAN())){
+                if (!accountHashMap.containsKey(account.getIBAN())) {
                     List<Payment> payments = new ArrayList<>();
                     account.setPayments(payments);
                     accountHashMap.put(account.getIBAN(), account);
@@ -48,7 +44,7 @@ public class BudgetPlannerImporter {
     }
 
     private Payment mapPayment(String[] lineSplit) {
-        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("EEE MMM dd HH:mm:ss zzz yyyy", Locale.ENGLISH);
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("E MMM dd HH:mm:ss zzz yyyy", Locale.ENGLISH);
         return new Payment(LocalDateTime.parse(lineSplit[3], dateTimeFormatter), Float.parseFloat(lineSplit[4]), lineSplit[5], lineSplit[6]);
     }
 }
