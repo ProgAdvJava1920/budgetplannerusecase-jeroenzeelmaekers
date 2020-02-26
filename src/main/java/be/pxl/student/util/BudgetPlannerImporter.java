@@ -10,62 +10,37 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Locale;
+import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * Util class to import csv file
  */
 public class BudgetPlannerImporter {
 
-    private Path filePath;
-
-    public BudgetPlannerImporter(String filePath) {
-        this.filePath = Paths.get(filePath);
+    public BudgetPlannerImporter() {
     }
 
-    public List<Account> readFile() {
-        List<Account> accounts = new ArrayList<>();
-        List<Payment> payments = new ArrayList<>();
-        Account currentAccount = null;
+    public List<Account> readFile(String path) {
+        Path filePath = Paths.get(path);
+        HashMap<String, Account> accountHashMap = new HashMap<>();
         try (BufferedReader reader = Files.newBufferedReader(filePath)) {
             String line = reader.readLine();
             while ((line = reader.readLine()) != null) {
                 String[] lineSplit = line.split(",");
-                if(lineSplit.length <= 6) {
-                    line = reader.readLine();
-                    if(line != null) {
-                        lineSplit = line.split(",");
-                    } else {
-                        break;
-                    }
+                Account account = mapAccount(lineSplit);
+                Payment payment = mapPayment(lineSplit);
+                if (!accountHashMap.containsKey(account.getIBAN())){
+                    List<Payment> payments = new ArrayList<>();
+                    account.setPayments(payments);
+                    accountHashMap.put(account.getIBAN(), account);
                 }
-                if(IsNewAccount(accounts, lineSplit)) {
-                    currentAccount = new Account(lineSplit[1], lineSplit[0]);
-                    accounts.add(currentAccount);
-                    payments = new ArrayList<>();
-                }
-                Payment currentPayment = mapPayment(lineSplit);
-                payments.add(currentPayment);
-                accounts.get(accounts.size() - 1).setPayments(payments);
-
+                accountHashMap.get(account.getIBAN()).getPayments().add(payment);
             }
         } catch (IOException ex) {
             ex.printStackTrace();
         }
-        return accounts;
-    }
-
-    private boolean IsNewAccount(List<Account> accounts, String[] lineSplit) {
-        boolean isNewAccount = true;
-        for (Account account: accounts) {
-            if(account.getIBAN().equals(lineSplit[1])) {
-                isNewAccount = false;
-                break;
-            }
-        }
-        return isNewAccount;
+        return new ArrayList<>(accountHashMap.values());
     }
 
     private Account mapAccount(String[] lineSplit) {
@@ -74,9 +49,6 @@ public class BudgetPlannerImporter {
 
     private Payment mapPayment(String[] lineSplit) {
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("EEE MMM dd HH:mm:ss zzz yyyy", Locale.ENGLISH);
-        return new Payment(LocalDateTime.parse(lineSplit[3], dateTimeFormatter),
-                Float.parseFloat(lineSplit[4]),
-                lineSplit[5],
-                lineSplit[6]);
+        return new Payment(LocalDateTime.parse(lineSplit[3], dateTimeFormatter), Float.parseFloat(lineSplit[4]), lineSplit[5], lineSplit[6]);
     }
 }
