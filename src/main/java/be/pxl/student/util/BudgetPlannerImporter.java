@@ -12,8 +12,10 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.*;
-
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Locale;
 
 /**
  * Util class to import csv file
@@ -21,7 +23,6 @@ import java.util.*;
 public class BudgetPlannerImporter {
 
     private static Logger logger;
-
 
     public BudgetPlannerImporter() {
         logger = LogManager.getLogger();
@@ -35,7 +36,6 @@ public class BudgetPlannerImporter {
             while ((line = reader.readLine()) != null) {
                 String[] lineSplit = line.split(",");
                 Account account = mapAccount(lineSplit);
-                //logger.debug("New account created" + account);
                 Payment payment = mapPayment(lineSplit);
                 logger.debug("New payment created" + payment);
                 if (!accountHashMap.containsKey(account.getIBAN())) {
@@ -44,7 +44,6 @@ public class BudgetPlannerImporter {
                     accountHashMap.put(account.getIBAN(), account);
                 }
                 accountHashMap.get(account.getIBAN()).getPayments().add(payment);
-
             }
         } catch (IOException ex) {
             logger.error(ex);

@@ -6,6 +6,7 @@ import java.util.stream.Collectors;
 
 public class Account {
 
+    private long id;
     private String IBAN;
     private String name;
     private List<Payment> payments;
@@ -13,6 +14,14 @@ public class Account {
     public Account(String IBAN, String name) {
         this.IBAN = IBAN;
         this.name = name;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getIBAN() {
@@ -42,6 +51,7 @@ public class Account {
     @Override
     public String toString() {
         return "Account{" +
+                "id=" + id +
                 "IBAN='" + IBAN + '\'' +
                 ", name='" + name + '\'' +
                 ", payments=[" + payments.stream()
