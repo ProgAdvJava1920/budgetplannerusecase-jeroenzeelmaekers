@@ -2,7 +2,6 @@ package be.pxl.student;
 
 import be.pxl.student.entity.Account;
 import be.pxl.student.util.BudgetPlannerImporter;
-
 import java.util.List;
 
 public class BudgetPlanner {
