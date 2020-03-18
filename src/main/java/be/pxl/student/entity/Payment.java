@@ -8,6 +8,9 @@ public class Payment {
     private float amount;
     private String currency;
     private String detail;
+    private int id;
+    private int accountId;
+    private int counterAccountId;
 
     public Payment(LocalDateTime date, float amount, String currency, String detail) {
         this.date = date;
@@ -15,6 +18,10 @@ public class Payment {
         this.currency = currency;
         this.detail = detail;
     }
+
+    public int id() { return id; }
+
+    public void setId(int id) { this.id = id; }
 
     public LocalDateTime getDate() {
         return date;
@@ -56,5 +63,21 @@ public class Payment {
                 ", currency='" + currency + '\'' +
                 ", detail='" + detail + '\'' +
                 '}' + '\n';
+    }
+
+    public int getAccountId() {
+        return accountId;
+    }
+
+    public void setAccountId(int accountId) {
+        this.accountId = accountId;
+    }
+
+    public int getCounterAccountId() {
+        return counterAccountId;
+    }
+
+    public void setCounterAccountId(int counterAccountId) {
+        this.counterAccountId = counterAccountId;
     }
 }

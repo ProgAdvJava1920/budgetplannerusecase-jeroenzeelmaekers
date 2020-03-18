@@ -21,7 +21,7 @@ public class AccountDAO {
         this.password = password;
     }
 
-    public void createAccount(Account account) {
+    public Account createAccount(Account account) {
         try (Connection connection = getConnection();
              PreparedStatement statement = connection.prepareStatement(INSERT, Statement.RETURN_GENERATED_KEYS)) {
             statement.setString(1, account.getName());
@@ -30,12 +30,14 @@ public class AccountDAO {
                 try (ResultSet rs = statement.getGeneratedKeys()) {
                     if (rs.next()) {
                         account.setId(rs.getInt(1));
+                        return account;
                     }
                 }
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        return null;
     }
 
     public boolean updateAccount(Account account) {
