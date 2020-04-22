@@ -55,16 +55,6 @@ public class Payment {
         this.detail = detail;
     }
 
-    @Override
-    public String toString() {
-        return "{" +
-                "date=" + date +
-                ", amount=" + amount +
-                ", currency='" + currency + '\'' +
-                ", detail='" + detail + '\'' +
-                '}' + '\n';
-    }
-
     public int getAccountId() {
         return accountId;
     }
@@ -79,5 +69,15 @@ public class Payment {
 
     public void setCounterAccountId(int counterAccountId) {
         this.counterAccountId = counterAccountId;
+    }
+
+    @Override
+    public String toString() {
+        return "{" +
+                "date=" + date +
+                ", amount=" + amount +
+                ", currency='" + currency + '\'' +
+                ", detail='" + detail + '\'' +
+                '}' + '\n';
     }
 }
