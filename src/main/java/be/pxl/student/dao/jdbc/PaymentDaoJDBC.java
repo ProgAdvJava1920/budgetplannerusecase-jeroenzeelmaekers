@@ -2,7 +2,6 @@ package be.pxl.student.dao.jdbc;
 
 import be.pxl.student.dao.interfaces.IPaymentDao;
 import be.pxl.student.entity.Account;
-import be.pxl.student.entity.Label;
 import be.pxl.student.entity.Payment;
 
 import java.sql.*;
@@ -33,7 +32,7 @@ public class PaymentDaoJDBC implements IPaymentDao {
         try (Connection connection = getConnection();
              PreparedStatement statement = connection.prepareStatement(SELECT_ALL)) {
             ResultSet resultSet = statement.executeQuery();
-            while(resultSet.next()) {
+            while (resultSet.next()) {
                 paymentList.add(mapPayment(resultSet));
             }
         } catch (SQLException sqlException) {
@@ -53,7 +52,7 @@ public class PaymentDaoJDBC implements IPaymentDao {
             statement.setLong(6, counterAccount.getId());
             if (statement.executeUpdate() == 1) {
                 try (ResultSet resultSet = statement.getGeneratedKeys()) {
-                    if(resultSet.next()) {
+                    if (resultSet.next()) {
                         payment.setId(resultSet.getInt(1));
                         return true;
                     }
@@ -66,13 +65,14 @@ public class PaymentDaoJDBC implements IPaymentDao {
     }
 
     @Override
-    public boolean updatePayment(Payment payment, Account account) {
+    public boolean updatePayment(Payment payment, Account account, Account counterAccount) {
         try (Connection connection = getConnection(); PreparedStatement statement = connection.prepareStatement(UPDATE)) {
             statement.setDate(1, new Date(payment.getDate().getYear(), payment.getDate().getMonthValue(), payment.getDate().getDayOfMonth()));
             statement.setFloat(2, payment.getAmount());
             statement.setString(3, payment.getCurrency());
             statement.setString(4, payment.getDetail());
             statement.setLong(5, account.getId());
+            statement.setLong(6, counterAccount.getId());
             return statement.execute();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -96,7 +96,7 @@ public class PaymentDaoJDBC implements IPaymentDao {
         try (Connection connection = getConnection(); PreparedStatement statement = connection.prepareStatement(SELECT_BY_ID)) {
             statement.setLong(1, id);
             ResultSet resultSet = statement.executeQuery();
-            if(resultSet.next()) {
+            if (resultSet.next()) {
                 return mapPayment(resultSet);
             }
         } catch (SQLException e) {
@@ -105,11 +105,13 @@ public class PaymentDaoJDBC implements IPaymentDao {
         return null;
     }
 
-    private Payment mapPayment(ResultSet resultSet) throws SQLException{
-        Payment payment = new Payment(resultSet.getTimestamp("date").toLocalDateTime(), resultSet.getFloat("amount"), resultSet.getString("currency"), resultSet.getString("detail"));
+    private Payment mapPayment(ResultSet resultSet) throws SQLException {
+        Payment payment = new Payment();
+        payment.setDate(resultSet.getTimestamp("date").toLocalDateTime());
+        payment.setAmount(resultSet.getFloat("amount"));
+        payment.setCurrency(resultSet.getString("currency"));
+        payment.setDetail(resultSet.getString("detail"));
         payment.setId(resultSet.getInt("id"));
-        payment.setAccountId(resultSet.getInt("accountId"));
-        payment.setCounterAccountId(resultSet.getInt("counterAccountId"));
         return payment;
     }
 

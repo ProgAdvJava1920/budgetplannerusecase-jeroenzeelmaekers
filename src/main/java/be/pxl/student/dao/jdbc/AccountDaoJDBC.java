@@ -97,7 +97,9 @@ public class AccountDaoJDBC implements IAccountDao {
     }
 
     private Account mapAccount(ResultSet resultSet) throws SQLException{
-        Account account = new Account(resultSet.getString("IBAN"),resultSet.getString("name"));
+        Account account = new Account();
+        account.setIBAN(resultSet.getString("IBAN"));
+        account.setName(resultSet.getString("name"));
         account.setId(resultSet.getInt("id"));
         return account;
     }

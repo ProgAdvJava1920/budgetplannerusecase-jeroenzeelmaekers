@@ -1,25 +1,30 @@
 package be.pxl.student.entity;
 
+import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.Objects;
 
+@Entity
 public class Payment {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
     private LocalDateTime date;
     private float amount;
     private String currency;
     private String detail;
-    private int id;
-    private int accountId;
-    private int counterAccountId;
+    @ManyToOne
+    @JoinColumn(name = "accountId", nullable = false)
+    private Account account;
+    @ManyToOne
+    @JoinColumn(name = "counterAccountId", nullable = false)
+    private Account counterAccount;
 
-    public Payment(LocalDateTime date, float amount, String currency, String detail) {
-        this.date = date;
-        this.amount = amount;
-        this.currency = currency;
-        this.detail = detail;
+    public Payment() {
     }
 
-    public int id() { return id; }
+    public int getId() { return id; }
 
     public void setId(int id) { this.id = id; }
 
@@ -55,29 +60,38 @@ public class Payment {
         this.detail = detail;
     }
 
-    public int getAccountId() {
-        return accountId;
+    public Account getAccount() {
+        return account;
     }
 
-    public void setAccountId(int accountId) {
-        this.accountId = accountId;
+    public void setAccount(Account account) {
+        this.account = account;
     }
 
-    public int getCounterAccountId() {
-        return counterAccountId;
+    public Account getCounterAccount() {
+        return counterAccount;
     }
 
-    public void setCounterAccountId(int counterAccountId) {
-        this.counterAccountId = counterAccountId;
+    public void setCounterAccount(Account counterAccount) {
+        this.counterAccount = counterAccount;
     }
 
     @Override
-    public String toString() {
-        return "{" +
-                "date=" + date +
-                ", amount=" + amount +
-                ", currency='" + currency + '\'' +
-                ", detail='" + detail + '\'' +
-                '}' + '\n';
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Payment payment = (Payment) o;
+        return getId() == payment.getId() &&
+                Float.compare(payment.getAmount(), getAmount()) == 0 &&
+                getDate().equals(payment.getDate()) &&
+                getCurrency().equals(payment.getCurrency()) &&
+                getDetail().equals(payment.getDetail()) &&
+                getAccount().equals(payment.getAccount()) &&
+                getCounterAccount().equals(payment.getCounterAccount());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getId(), getDate(), getAmount(), getCurrency(), getDetail(), getAccount(), getCounterAccount());
     }
 }

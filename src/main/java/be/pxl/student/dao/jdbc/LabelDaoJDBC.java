@@ -97,7 +97,9 @@ public class LabelDaoJDBC implements ILabelDao {
     }
 
     private Label mapLabel(ResultSet resultSet) throws SQLException {
-        Label label = new Label(resultSet.getString("name"), resultSet.getString("description"));
+        Label label = new Label();
+        label.setName(resultSet.getString("name"));
+        label.setDescription(resultSet.getString("description"));
         label.setId(resultSet.getInt("id"));
         return label;
     }

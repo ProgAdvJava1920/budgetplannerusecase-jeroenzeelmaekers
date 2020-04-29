@@ -12,7 +12,7 @@ public interface IPaymentDao {
 
     boolean createPayment(Payment payment, Account account, Account counterAccount);
 
-    boolean updatePayment(Payment payment, Account account);
+    boolean updatePayment(Payment payment, Account account, Account counterAccount);
 
     boolean deletePayment(int id);
 

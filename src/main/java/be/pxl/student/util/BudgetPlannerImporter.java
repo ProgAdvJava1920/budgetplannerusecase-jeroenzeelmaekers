@@ -53,11 +53,19 @@ public class BudgetPlannerImporter {
     }
 
     public Account mapAccount(String[] lineSplit) {
-        return new Account(lineSplit[1], lineSplit[0]);
+        Account account = new Account();
+        account.setIBAN(lineSplit[1]);
+        account.setName(lineSplit[0]);
+        return account;
     }
 
     public Payment mapPayment(String[] lineSplit) {
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("E MMM dd HH:mm:ss zzz yyyy", Locale.ENGLISH);
-        return new Payment(LocalDateTime.parse(lineSplit[3], dateTimeFormatter), Float.parseFloat(lineSplit[4]), lineSplit[5], lineSplit[6]);
+        Payment payment = new Payment();
+        payment.setDate(LocalDateTime.parse(lineSplit[3], dateTimeFormatter));
+        payment.setAmount(Float.parseFloat(lineSplit[4]));
+        payment.setCurrency(lineSplit[5]);
+        payment.setDetail(lineSplit[6]);
+        return payment;
     }
 }
